@@ -1,12 +1,15 @@
 :root {
   --black: hsl(205, 86%, 17%);
-  --white: hsl(210, 35%, 96%);
+  --white: rgba(255, 255, 255, 0.9);
   --dark-blue: hsl(197, 54%, 30%);
-  --light-blue: hsl(197, 54%, 42%); /* #3287a8 */
+  --light-blue: #3184a5;
+  --orange: #ff7f27;
+  --pink: #ff127e;
 }
 
 body {
-  border: 25px solid var(--dark-blue);
+  border-top: 25px solid var(--orange);
+  border-bottom: 50px solid var(--pink);
   border-width: 25px 0 50px;
   min-height: 100vh;
 }
@@ -30,17 +33,21 @@ h1 {
   margin-bottom: 0;
 }
 
+h5 {
+  margin-bottom: 1em;
+}
+
 .app-store-button {
   height: 60px;
 }
 
 a {
-  color: var(--light-blue);
+  color: var(--pink);
   text-decoration: none !important;
 }
 
 a:hover {
-  color: var(--light-blue);
+  color: var(--orange);
 }
 
 @media (max-width: 768px) {
@@ -60,8 +67,9 @@ a:hover {
       background-color: rgb(26, 28, 38);
   }
 
-  h1 {
-      color: white;
+  h1,
+  h5 {
+    color: rgba(255, 255, 255, 0.9);
   }
 
   .bg-light {
