@@ -1,0 +1,79 @@
+:root {
+  --black: hsl(205, 86%, 17%);
+  --white: hsl(210, 35%, 96%);
+  --dark-blue: hsl(197, 54%, 30%);
+  --light-blue: hsl(197, 54%, 42%); /* #3287a8 */
+}
+
+body {
+  border: 25px solid var(--dark-blue);
+  border-width: 25px 0 50px;
+  min-height: 100vh;
+}
+
+.screenshot {
+  min-height: 600px;
+  max-height:  75vh;
+}
+
+.mac-screenshot {
+  max-width: 45vw;
+}
+
+.app-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 12px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.app-store-button {
+  height: 60px;
+}
+
+a {
+  color: var(--light-blue);
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--light-blue);
+}
+
+@media (max-width: 768px) {
+  .screenshot {
+      min-height: auto;
+      max-height: auto;
+      width: 100%;
+  }
+  
+  .mac-screenshot {
+      max-width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: rgb(26, 28, 38);
+  }
+
+  h1 {
+      color: white;
+  }
+
+  .bg-light {
+      background-color: rgb(46, 48, 58) !important;
+      color: rgba(255, 255, 255, 0.9);
+  }
+
+  .bg-light .text-secondary {
+      color:  rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .quote {
+      color: rgb(248, 249, 250) !important;
+  }
+}
